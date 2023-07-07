@@ -1,18 +1,17 @@
-
+import { useEffect, useState } from "react";
 
 const Script1=()=>{
-
-    function enableDarkMode() {
-        let main_body = document.body;
-        main_body.classList.toggle("dark-mode");
     
-        // Check if checkbox is checked or not
-        if (document.getElementById('checkitem').checked) {
-            console.log("checked");
-        } else {
-            console.log("NOT checked");
-        }
+
+    const [isOn, setIsOn] = useState(false);
+
+    const changeBulb = () => {
+        setIsOn(
+            document.body.classList.toggle("dark-mode")  
+        );
     }
+
+
 
     return(
 <section className='sectioTitle'>
@@ -24,7 +23,7 @@ const Script1=()=>{
      🔍  
     <input title="Busca una Ciudad" placeholder="Search of City"></input>
     </div>
-    <input id="checkitem" type="checkbox"  />
+    <input id="checkitem" type="checkbox"  onClick={changeBulb}/>
     <script src="script.js"></script>
 
 </div>

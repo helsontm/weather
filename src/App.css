@@ -7,7 +7,7 @@
 body{
   font-weight: bold;
   
-    background:linear-gradient(0.25turn, rgb(108, 155, 242),#7425e2, #5d0930 );
+  background:linear-gradient(0.25turn, rgb(108, 155, 242),#7425e2, #5d0930 );
     background-size: 180% 180%;
 	 animation: -animation 6s ease infinite;
     padding: 6px;
@@ -16,26 +16,22 @@ body{
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background: #222222;
-  color: #ffffff;
+  background:linear-gradient(0.25turn, #220337 ,#56336d, rgb(2, 15, 39)) ;
+
 }
 
 /* Estilos para los elementos específicos en modo oscuro */
-body.dark-mode h1 {
-  color: #ffcc00;
-}
+body.dark-mode .titleBuscar {background-color: #041522;}
 
-body.dark-mode a {
-  color: #00ffcc;
-}
-.sectioTitle{
-  
-  
-}
+body.dark-mode h5 {color:rgb(195, 154, 254);}
+
+body.dark-mode input{background-color: #041522;}
+
+body.dark-mode button{background-color:#8458e2;  }
 
 
+/*------------------Titulo buscador y cambio darkmode---------*/
 .title{
- 
   display: flex;
   justify-content:space-between;
   padding: 50px;
@@ -233,7 +229,7 @@ input[type="checkbox"] {
   position: relative;
   width: 40px;
   height: 20px;
-  background: linear-gradient(0.25turn,#3a035e ,#051346, rgb(2, 15, 39)  );;
+  background: linear-gradient(0.25turn,#3a035e ,#051346, rgb(2, 15, 39)  );
   appearance: none;   /* Hides certain features of widgets */ 
   outline: none;
   border-radius: 20px;
