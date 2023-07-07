@@ -22,7 +22,7 @@ const Script1=()=>{
     
     <div className="titleBuscar">
      🔍  
-    <input title="Busca una Ciudad" placeholder="Search a City"></input>
+    <input title="Busca una Ciudad" placeholder="Search of City"></input>
     </div>
     <input id="checkitem" type="checkbox"  />
     <script src="script.js"></script>
