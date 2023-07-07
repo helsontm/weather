@@ -1,0 +1,362 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  
+  text-decoration-color: white;
+    background:linear-gradient(0.25turn, rgb(108, 155, 242),#7425e2, #5d0930 );
+    background-size: 180% 180%;
+	 animation: -animation 6s ease infinite;
+    padding: 6px;
+    margin: 10px;
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+  background: #222222;
+  color: #ffffff;
+}
+
+/* Estilos para los elementos específicos en modo oscuro */
+body.dark-mode h1 {
+  color: #ffcc00;
+}
+
+body.dark-mode a {
+  color: #00ffcc;
+}
+.sectioTitle{
+  
+  
+}
+
+
+.title{
+ 
+  display: flex;
+  justify-content:space-between;
+  padding: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.titleBuscar{
+  border-color: white;
+  background-color: rgba(126, 182, 241);
+  border-radius: 30px;
+  border-style: 2px  white;
+  width: 200px;
+  box-shadow: -5px 1px 3px 0px rgba(132, 5, 5, 0.399);
+  margin-inline-end: 90px;
+}
+
+input{
+  border: 0;
+  outline: none;
+  background-color: rgba(126, 182, 241);
+  color: white;
+}
+
+h1{
+  color: white;
+  
+}
+
+h2{
+  color:#e3e4e5;
+  padding-top: 3px;
+  font-size: 30px;
+ 
+}
+
+h3{
+  color:#e3e4e5;
+  padding-top: 3px;
+  
+  
+}
+h5{
+  padding: 4px;
+ color:#e3e4e5;
+ 
+}
+
+.time{
+  display:flex;
+  justify-content: center;
+ 
+  
+}
+
+.container{
+background:linear-gradient(0.25turn, rgba(45, 3, 255, 0.381),rgba(83, 204, 156, 0.381),  transparent);
+border-radius: 25px;
+
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  display:flex;
+justify-content:space-around;
+width: 300px;
+    padding: 20px
+}
+
+
+
+
+.footer{
+  margin-top: 80px;
+  text-align: center;
+}
+
+
+
+img{
+  height: 100px;
+
+}
+
+button{
+  background-color: rgba(76, 176, 230, 0.653);
+  text-decoration: none;
+  display:inline-block;
+  
+  padding:20px;
+  text-align: center;
+  color:white;
+  font-size: 12px;
+  font-weight: bold;
+  transition: all 0.9s ease;
+  box-shadow: -5px 1px 3px 0px rgba(132, 5, 5, 0.49);
+  border-radius: 10px 30px;
+}
+
+button:hover{
+  background: linear-gradient(0.25turn, rgba(38, 38, 39, 0.689), rgba(76, 3, 3, 0.844) );
+  color:rgb(220, 234, 22);
+  box-shadow:none;
+  border-radius: 10px;
+}
+
+/*-------------------Lo de el load---------------------*/
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.loader {
+  background:linear-gradient(0.25turn, rgba(45, 3, 255, 0.801),rgba(83, 204, 156, 0.533),  transparent);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------Animacion del fondo------------------- */
+@keyframes -animation {
+
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
+
+/*-------------Animaciones de la imagen */
+img{
+  animation: img-animation 5s ease infinite;  
+}
+@keyframes img-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*---------Lo de el checkbox---------------*/
+input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: linear-gradient(0.25turn,#3a035e ,#051346, rgb(2, 15, 39)  );;
+  appearance: none;   /* Hides certain features of widgets */ 
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+} 
+
+input[type="checkbox"]:checked {
+  background: linear-gradient(0.25turn, rgb(108, 155, 242),#7425e2, #5d0930 )
+}
+
+input[type="checkbox"]::before {
+   content: '';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   background-color: #f2f2f2;
+   border-radius: 50%;
+   top: 2px;
+   left: 2px;
+   transition: 0.7s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+
+/*-----------------Responsive*/
+
+
+
+@media screen and (max-width: 800px) {
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+  
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .title {
+      text-align: center;
+      margin-bottom: auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+.titleBuscar {
+  margin:auto;
+}
+
+h1 {
+  margin: 10px
+}
+  
+input[type="checkbox"] {
+  margin:auto;
+  margin-top: 10px;
+}
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .title {
+    text-align: center;
+    margin-bottom: auto;
+   padding:0;
+   display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: baseline;
+}
+
+.titleBuscar {
+  margin-inline-end: 60px
+}
+
+h1 {
+  margin: 10px
+}
+  
+input[type="checkbox"] {
+  margin: 10px
+}
+
+ 
+}
+
+
+@media screen and (max-width: 400px) {
+  .title {
+    text-align: center;
+    margin-bottom: auto;
+   padding:0;
+   display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: baseline;
+}
+
+.titleBuscar {
+  margin-inline-end: 40px
+}
+
+h1 {
+  margin: 10px
+}
+  
+input[type="checkbox"] {
+  margin: 10px
+}
+
+}
