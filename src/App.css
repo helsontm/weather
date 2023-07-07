@@ -46,19 +46,21 @@ body.dark-mode a {
 
 .titleBuscar{
   border-color: white;
-  background-color: rgba(126, 182, 241);
+  background-color: #2b85cd;
+  border-top: 2px solid rgba(255, 255, 255, 0.315);
   border-radius: 10px;
   border-style: 2px  white;
-  width: 300px;
+  width: 250px;
   box-shadow: -5px 1px 3px 0px rgba(132, 5, 5, 0.399);
   margin-inline-end: 80px;
   font-weight: bold;
+  
 }
 
 input{
   border: 0;
   outline: none;
-  background-color: rgba(126, 182, 241);
+  background-color: #2b85cd;
   color: white;
   width: 150px;
   font-weight: bold;
@@ -128,7 +130,7 @@ img{
 }
 
 button{
-  background-color: rgba(76, 176, 230, 0.653);
+  background-color: #2b85cd;
   text-decoration: none;
   display:inline-block;
   
@@ -296,12 +298,16 @@ input[type="checkbox"]:checked::before {
 }
 
 h1 {
-  margin: 10px
+  margin: 15px;
+    position: relative;
+    left: -170px;
 }
   
 input[type="checkbox"] {
   margin:auto;
-  margin-top: 10px;
+  position: relative;
+    top: -55px;
+    left: 190px;
 }
 
 
@@ -329,11 +335,16 @@ input[type="checkbox"] {
 }
 
 h1 {
-  margin: 10px
+  margin: 10px;
+  position: relative;
+    left: -60px;
 }
   
 input[type="checkbox"] {
-  margin: 10px
+  margin: 10px;
+  position: relative;
+    top: -65px;
+    left: 250px;
 }
 
  
@@ -356,15 +367,21 @@ input[type="checkbox"] {
 }
 
 .titleBuscar {
-  margin-inline-end: 40px
+  margin-inline-end: 20px;
 }
+
 
 h1 {
   margin: 10px
 }
   
 input[type="checkbox"] {
-  margin: 10px
+  margin: 10px;
+  position: relative;
+    top: -65px;
+    left: 190px;
 }
+
+
 
 }
