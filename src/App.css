@@ -16,8 +16,9 @@ body{
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background:linear-gradient(0.25turn, #220337 ,#56336d, rgb(2, 15, 39)) ;
-
+  background:linear-gradient(0.25turn, #401e55 ,#0b1478, rgb(1, 12, 32)) ;
+  background-size: 180% 180%;
+  animation: -animation 6s ease infinite;
 }
 
 /* Estilos para los elementos específicos en modo oscuro */
