@@ -16,9 +16,9 @@ body{
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-  background:linear-gradient(0.25turn, #401e55 ,#0b1478, rgb(1, 12, 32)) ;
-  background-size: 180% 180%;
-  animation: -animation 6s ease infinite;
+/*background-image:linear-gradient(0.25turn,  rgb(93, 23, 154) , rgb(36, 15, 119) ) ;*/
+background:linear-gradient(0.25turn,  rgba(93, 23, 154, 0.827) , rgba(36, 15, 119, 0.86) ), url("/public/stars-space.gif");
+animation: -animation 6s ease;
 }
 
 /* Estilos para los elementos específicos en modo oscuro */
@@ -111,6 +111,10 @@ width: 300px;
     padding: 20px
 }
 
+.imgIcons{
+  text-align: center;
+}
+
 
 
 
@@ -182,7 +186,8 @@ button:hover{
 }
 
 .loader {
-  background:linear-gradient(0.25turn, rgba(45, 3, 255, 0.801),rgba(83, 204, 156, 0.533),  transparent);
+  background:linear-gradient(0.25turn, rgba(45, 3, 255, 0.84), white), url('/public/clima.gif');
+  background-size: 180% ;
   z-index: 100;
   position: fixed;
   top: 0;
@@ -230,7 +235,7 @@ input[type="checkbox"] {
   position: relative;
   width: 40px;
   height: 20px;
-  background: linear-gradient(0.25turn,#3a035e ,#051346, rgb(2, 15, 39)  );
+  background: linear-gradient(0.25turn,  rgba(93, 23, 154, 0.752) , rgba(36, 15, 119, 0.566) ), url("/public/stars-space.gif");
   appearance: none;   /* Hides certain features of widgets */ 
   outline: none;
   border-radius: 20px;
